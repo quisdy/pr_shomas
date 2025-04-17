@@ -1,0 +1,265 @@
+@font-face {
+	font-family: 'Involve Medium';
+	src: url('fonts/Involve-Medium.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Soledago';
+	src: url('fonts/Soledago.ttf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--color-white: #ffffff;
+	--color-yellow: #fffcf2;
+	--color-dark-green: #21420c;
+	--color-green: #bad4aa;
+	--color-light-green: #ebf5df;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to bottom, var(--color-dark-green), var(--color-yellow));
+	font-family: 'Involve Medium', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color-dark-green);
+	font-family: 'Soledago';
+	text-align: center;
+	font-size: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.h3_container {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-self: center;
+	justify-content: center;
+	padding: 20px 0;
+	border-radius: 10000px;
+	background-color: var(--color-dark-green);
+	margin: 50px 0 30px 0;
+}
+
+h3 {
+	color: var(--color-yellow);
+	font-size: 40px;
+}
+
+p {
+	color: var(--color-dark-green);
+	text-align: justify;
+	margin: 15x 0;
+}
+
+a {
+	font-family: 'Involve Medium', sans-serif;
+	font-size: 16px;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.nav-link {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+}
+
+.nav-link:link {
+	color: var(--color-dark-green);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: var(--color-white);
+	border-radius: 1000px;
+	background-color: var(--color-green);
+}
+
+.nav-link:hover {
+	border-radius: 1000px;
+	border: solid 2px var(--color-green);
+}
+
+
+
+
+header {
+	padding: 30px 0;
+	background-color: var(--color-light-green);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.nav {
+	background-color: var(--color-yellow);
+	border-radius: 20px;
+	margin: auto 150px;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.tab-pane {
+	padding: 50px;
+}
+
+.work13_content {
+	border-radius: 100px;
+	background-color: var(--color-yellow);
+	margin: 0 auto;
+	width: 60%;
+	padding: 50px 100px;
+}
+
+.toc {
+	padding: 30px 0;
+	margin: 50px auto;
+	border-radius: 1000px;
+	background-color: var(--color-light-green);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.toc_nav {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 0;
+}
+
+.toc_nav_link {
+	color: var(--color-dark-green);
+	text-decoration: none;
+}
+
+.toc_nav_link:hover {
+	text-decoration: wavy;
+	color: var(--color-dark-green);
+}
+
+.theory {
+	display: flex;
+	flex-direction: column;
+}
+
+.accent_container {
+	border-radius: 100px;
+	border: 2px solid var(--color-green);
+	padding: 20px 30px;
+}
+
+
+.test_container {
+	width: 60%;
+	margin-top: 50px;
+	margin: 0 auto;
+	padding: 50px 100px;
+	background: radial-gradient(circle, var(--color-dark-green), var(--color-light-green));
+}
+
+
+
+
+/* БЛОК КОДА */
+/* From Uiverse.io by Bastiennnn */
+.card {
+	padding: 20px;
+	width: 100%;
+	background-color: #24233b;
+	border-radius: 8px;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.card:hover {
+	transform: translateY(-3px);
+}
+
+.top {
+	display: flex;
+	padding-left: 10px;
+}
+
+.circle {
+	padding: 0 4px;
+}
+
+.circle2 {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+	border-radius: 5px;
+}
+
+.red {
+	background-color: #ff605c;
+}
+
+.yellow {
+	background-color: #ffbd44;
+}
+
+.green {
+	background-color: #00ca4e;
+}
+
+.header {
+	margin: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	display: flex;
+	align-content: center;
+	justify-items: center;
+}
+
+#title2 {
+	padding: 0;
+	margin: 0;
+	color: white;
+	padding-left: 50px;
+	font-size: 15px;
+}
+
+#code {
+	width: 95%;
+	height: fit-content;
+	resize: none;
+	background-color: rgb(73, 70, 92);
+	border-radius: 5px;
+	border: none;
+	color: white;
+	padding: 10px;
+	margin: auto;
+}
+
+#code:focus {
+	outline: none !important;
+}
