@@ -55,6 +55,7 @@ h2 {
 	border-radius: 10000px;
 	background-color: var(--color-dark-green);
 	margin: 50px 0 30px 0;
+	rotate: -1deg;
 }
 
 h3 {
@@ -107,7 +108,7 @@ a:hover {
 
 
 header {
-	padding: 30px 0;
+	width: 100%;
 	background-color: var(--color-light-green);
 	display: flex;
 	flex-direction: column;
@@ -117,13 +118,14 @@ header {
 .nav {
 	background-color: var(--color-yellow);
 	border-radius: 20px;
-	margin: auto 150px;
+	margin: auto;
+	margin-bottom: 20px;
 	justify-content: space-between;
 	width: 80%;
 }
 
 .tab-pane {
-	padding: 50px;
+	padding: 2%;
 }
 
 .work13_content {
@@ -131,7 +133,7 @@ header {
 	background-color: var(--color-yellow);
 	margin: 0 auto;
 	width: 60%;
-	padding: 50px 100px;
+	padding: 2% 10%;
 }
 
 .toc {
@@ -175,13 +177,13 @@ header {
 	padding: 20px 30px;
 }
 
-
-.test_container {
+.main_test_container{
 	width: 60%;
+	height: 800px;
+	margin: auto;
 	margin-top: 50px;
-	margin: 0 auto;
 	padding: 50px 100px;
-	background: radial-gradient(circle, var(--color-dark-green), var(--color-light-green));
+	background: radial-gradient(circle, var(--color-dark-green) 3%, var(--color-yellow) 60%);
 }
 
 
