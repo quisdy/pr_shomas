@@ -34,7 +34,7 @@ let currentQuestion = 0;
 let correctAnswers = 0;
 let wrongAnswers = 0;
 let timer;
-let timeLeft = 30;
+let timeLeft = 30000;
 
 function startTest() {
 	document.querySelector('.theory').style.display = 'none';
